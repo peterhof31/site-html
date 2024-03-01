@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Gatos</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Gatos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Bem-vindo ao Mundo dos Gatos!</h2>
+        <p>Conheça tudo sobre esses adoráveis animais de estimação.</p>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Gatos</h2>
+        <p>O gato doméstico é um pequeno mamífero carnívoro da família Felidae. É uma subespécie domesticada de gato selvagem africano.</p>
+        <p>Os gatos são conhecidos por sua independência, agilidade, curiosidade e habilidades de caça. Eles têm sido criados como animais de estimação e companheiros humanos por milhares de anos.</p>
+    </section>
+    <section id="galeria">
+        <h2>Galeria de Gatos</h2>
+        <div class="gallery">
+            <img src="https://blog.cobasi.com.br/wp-content/uploads/2023/08/AdobeStock_162545409.webp" alt="Gato 1">
+            <img src="https://www.whiskas.com.br/cdn-cgi/image/format=auto,q=90/sites/g/files/ffmzdf2156/files/2022-11/eduquer-son-Chaton-comment-bien-eduquer-son-Chaton-mobile.jpg" alt="Gato 2">
+            <img src="https://optimumpet.com.br/media/uploads/2022/12/dicas-sobre-gatos-01-1-scaled.webp" alt="Gato 3">
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="enviar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Site de Gatos</p>
+    </footer>
+</body>
+</html>
